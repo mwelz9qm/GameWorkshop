@@ -62,13 +62,13 @@ def guessingGame(lowEnd, highEnd, numGuesses):
         print(f"Guess number {guess} ****************** ")
         myGuess = int(input(f"Pick a number from {lowEnd} to  {highEnd}: " ))
         if (myGuess > randomNum):
-            print(f"Too high! You have {numGuesses - guess} left! ")
+            print(f"Too high! You have {numGuesses - guess} left! \n")
         elif (myGuess < randomNum):
-            print(f"Too low! You have {numGuesses - guess} left! ")
+            print(f"Too low! You have {numGuesses - guess} left! \n")
         else:
             print("You nailed it! Good job!")
             break
-            
+        
     if (myGuess != randomNum):
         print(f"Sorry you couldn't find the answer! It was {randomNum}.")
     
